@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+   <ul>
+       <li>list item 1 </li>
+       <li>list item 2</li>
+       <li>list item 3</li>
+       <li>list item 4</li>
+       <li>list item 5</li>
+       <li>list item 6</li>
+   </ul>
+
+
+    <ol>
+        <li>List item 1 </li>
+        <li>List item 2 </li>
+        <li> list item 3 </li>
+        <li>list item 4 </li>
+        <li>list item 5 </li>
+        <li>list item 6 </li>
+    </ol>
+
+<!-- Table tags -->
+
+     <table>
+         <thead> 
+             <tr>
+                 <td> english </td>
+                 <td>computer</td>
+                 <td>maths</td>
+             </tr>
+         </thead>
+         <tbody>
+             <tr> 
+                 <td>10</td>
+                 <td>20</td>
+                 <td>30</td>
+             </tr>
+
+             <tr> 
+                <td>17</td>
+                <td>26</td>
+                <td>35</td>
+            </tr>
+
+            <tr> 
+                <td>12</td>
+                <td>28</td>
+                <td>37</td>
+            </tr> 
+         </tbody>
+     </table>
+
+     <br>
+     <hr>
+     <!-- forms tag--> 
+     
+     <form>
+           <div>
+           <label for="nanme">Name</label>
+           <input type="text" id="nanme" name="name">
+
+         </div>
+
+          <br>
+         <div>
+           <label for="rollnumber">Rollnumber</label>
+           <input type="number" id="rollnumber" name="rollnumber">
+         </div>
+
+         <br>
+
+         <div>
+           <label for="class">class</label>
+           <input type="text" id="class" name="class">
+        </div> 
+        <br>
+        <div>
+            <label for="message">message</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </div> 
+        <br>
+        <div>
+            <label for="color">Your Favorite color</label>
+            <select name="color" id="color">
+                  <option value="black">black</option>
+                  <option value="green">green</option>
+                  <option value="yellow">yellow</option>
+                  <option value="marron">marron</option>
+                </select>
+        </div>
+
+        <br>
+
+        <div>
+           <h4>do you like yellow more black or both ? </h4>
+           <label for="yellow">yellow</label>
+           <input type="checkbox" id="yellow" name="yellow" value="yellow"> 
+           <label for="black">black</label>
+           <input type="checkbox" id="black" name="black" value="black">
+        </div>
+        <br>
+        <div>
+            <h4>choose one</h4>
+            <label for="black">black</label>
+            <input type="radio" id="black" name="black" value="black3">
+            <input type="radio" id="green" name="green" value="green">
+            <label for="green">green</label>
+        </div>
+        <br>
+        <div>
+            <input type="submit" name="submit" value="Submit" >
+            <input type="reset">
+        </div>
+         <br>
+         <hr>
+         <div>
+             <input type="button" value=" clickme">
+         </div>
+       <br>
+
+       <!-- selecting color from multiple color box , a color picker can show up in the input field.-->
+       <div>
+            <label for="Favoritecolor">choose your fav color </label>
+           <input type="color" id="Favoritecolor" name="Favoritecolor" value="#ff9000">
+            <input type="submit" value="submit it">
+       </div>
+       <br>
+       <hr>
+       <!-- the <input type="date"> is used for input fields that should contain a date. -->
+
+       <br>
+       <div>
+           <label for="available-date">choose the availabledate</label>
+           <input type="date" name="available-date" id="available-date">
+           <input type="submit" value="submit">
+       </div>
+        <br>
+        <hr>
+
+        <!-- The <input type="datetime-local"> specifies a date and time input field, with no time zone.  -->
+        <div>
+            <label for="available-time"> Enter available-time ( it will diaplay local time </label>
+            <input type="datetime-local" id="available-time" name="available-time">
+            <input type="submit" value="submit">
+        </div>
+        <br>
+        <hr>
+        <!-- The <input type="email"> is used for input fields that should contain an e-mail address -->
+        <div>
+           <label for="email">Enter email</label>
+           <input type="email" id="email" name="email">
+           <input type="submit" value="submit">
+        </div>
+        <br>
+        <hr>
+        <!-- The <input type="file"> defines a file-select field and a "Browse" button for file uploads. -->
+        <div>
+            <label for="selected-file">Choose file </label>
+            <input type="file" id="selected-file" name="selected-file">
+            <input type="submit" value="submit">
+        </div>
+
+        <!-- Input Type Hidden -->
+
+        <div>
+
+        </div>
+
+        <!--The <input type="month"> allows the user to select a month and year. -->
+         <br>
+         <hr>
+
+         <div>
+             <label for="Anniv-date"> Enter your anniversary  date</label>
+             <input type="'month'" name="Anniv-date" id="Anniv-date">
+             <input type="submit" value="submit">
+         </div>
+         <br>
+         <hr>
+         <!-- he <input type="number"> defines a numeric input field.You can also set restrictions on what numbers are accepted.The following example displays a numeric input field, where you can enter a value from 1 to 5:-->
+         <div>
+           <label for="Quantity-select">Select Quantity ( min Required) </label>
+           <input type="number" name="Quantity-select" id="Quantity-select" min="5" max="10">
+           <input type="submit" value="submit">
+         </div>
+         <br>
+         <hr>
+         <!-- The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes: -->
+         <div>
+             <label for=" Select-range"> Select estimated range Required</label>
+             <input type="range" id="Select-range"  name="Select-range">
+             <input type="submit" value="submit">
+         </div>
+         <br>
+         <hr>
+
+         <!-- The <input type="search"> is used for search fields (a search field behaves like a regular text field)-->
+         <div>
+             <label for="search-field"> YAhoo search</label>
+             <input type="search" id="search-field" name="search-field" >
+             <input type="submit" value="enter">
+         </div>
+          <br>
+          <hr>
+
+        <!--place holder = he placeholder attribute specifies a short hint that describes the expected value of an input field (e.g. a sample value or a short description of the expected   -->
+         <div>
+             <label for="plavehol"> Enter desired value </label>
+             <input placeholder="513-429-0899">
+             <input type="submit" value="submit">
+         </div>
+         <br>
+         <hr>
+
+         <!-- The <input type="tel"> is used for input fields that should contain a telephone number. -->
+          <div>
+            <label for="telephone"> Enter your telephone number</label>
+            <input type="tel" id="telephone" name="telephone" >
+            <input type="submit" value="enter">
+          </div>
+
+          <br>
+          <hr> 
+
+          <!-- The <input type="time"> allows the user to select a time (no time zone) -->
+
+          <div>
+            <label for="avail-time"> Enter your avail-time</label>
+            <input type="time" id="avail-time" name="avail-time" >
+            <input type="submit" value="enter">
+          </div>
+          
+          <br>
+          <hr>
+
+          <!--The <input type="url"> is used for input fields that should contain a URL address -->
+
+          <div>
+            <label for="user-url"> Enter your link to your website </label>
+            <input type="url" id="user-url" name="user-url">
+            <input type="submit" value="enter">
+          </div>
+          <br> <hr>
+
+          <!-- The <input type="week"> allows the user to select a week and year. -->
+          <div>
+            <label for="select-week"> Enter Available week  </label>
+            <input type="week" id="select-week" name="select-week">
+            <input type="submit" value="enter">
+          </div>
+     </form>
+</body>
+</html>
